@@ -424,6 +424,7 @@ body{
       padding: 10px 20px;
       margin: 20px 0;
       box-shadow: 2px 2px 4px 0px #ebebeb;
+      position: relative;
       .time{
         color: var(--main-color);
         font-size: 10px;
@@ -444,6 +445,31 @@ body{
           width: 30px;
           height: 30px;
           object-fit: cover;
+        }
+      }
+      .more-button{
+        width: 3px;
+        height: 3px;
+        background: #bbb;
+        border-radius: 50%;
+        position: absolute;
+        top: 30px;
+        right: 20px;
+
+        &::before,&::after{
+          content: '';
+          display: block;
+          width: 3px;
+          height: 3px;
+          background: #bbb;
+          border-radius: 50%;
+          position: absolute;
+        }
+        &::before{
+          top: -5px;
+        }
+        &::after{
+          top: 5px;
         }
       }
     }

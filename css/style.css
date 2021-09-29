@@ -441,6 +441,7 @@ body {
   padding: 10px 20px;
   margin: 20px 0;
   box-shadow: 2px 2px 4px 0px #ebebeb;
+  position: relative;
 }
 
 .right-side .right-content .task-box .time {
@@ -463,6 +464,34 @@ body {
   width: 30px;
   height: 30px;
   object-fit: cover;
+}
+
+.right-side .right-content .task-box .more-button {
+  width: 3px;
+  height: 3px;
+  background: #bbb;
+  border-radius: 50%;
+  position: absolute;
+  top: 30px;
+  right: 20px;
+}
+
+.right-side .right-content .task-box .more-button::before, .right-side .right-content .task-box .more-button::after {
+  content: '';
+  display: block;
+  width: 3px;
+  height: 3px;
+  background: #bbb;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.right-side .right-content .task-box .more-button::before {
+  top: -5px;
+}
+
+.right-side .right-content .task-box .more-button::after {
+  top: 5px;
 }
 
 .right-side .right-content .yellow {
